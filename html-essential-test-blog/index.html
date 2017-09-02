@@ -1,0 +1,124 @@
+<!DOCTYPE html> 
+<html lang='en'>
+<!-- 
+*Images
+*Hyper links
+*Embedded audio and video
+*Dynamic progress meter
+*Tables
+*Frames
+*And html5 forms
+-->
+<head>
+	<meta charset="UTF-8"/>
+	<title>
+		TMQ blog test
+	</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+<body>
+<header>
+	<nav>
+		<ul>
+			<li><a href="#Home">Home</a></li>
+			<li><a href="#About">About</a></li>
+			<li><a href="#Post">Post</a></li>
+			<li><a href="#Contact">Contact</a></li>
+		</ul>
+	</nav>
+	<image class="header-img" src="assets/home-bg.jpg" alt="home-bg" style="width:100%; height:100%">
+</header>
+<div class="main-container">
+	<div id="Home">
+<!--		<audio controls autoplay>-->
+		<audio controls>
+			<source src="assets/sound-1.ogg" type="audio/ogg">
+			<source src="assets/sound-1.mp3" type="audio/mpeg">
+		Your browser doesn't support current audio types.
+		</audio>
+	</div>
+	<div id="About">
+		<h1><strong>ABOUT</strong></h1>
+		<p>
+			<i>Morbi volutpat nunc nec velit congue, a pulvinar ante luctus. Aliquam eu eleifend felis, id luctus quam. Nunc pulvinar ex nec interdum euismod. Sed vel elit in tellus finibus auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin ut magna magna. Fusce nec feugiat leo. Donec tincidunt ipsum augue, ullamcorper bibendum mauris vehicula et.</i>
+		</p>
+		<div>
+		<!-- Uses custom data attribute for css -->
+			<ul>
+				<li data-custom="1">One</li>
+				<li data-custom="2">Two</li>
+				<li data-custom="3">Three</li>
+			</ul>
+			
+		</div>
+	</div>
+	<div id="Post">
+		<h2 class="post-title">Post Title</h2>
+		<p>
+			<strong>Post 2 page contains the frame, Post 3 contains the video.</strong> Phasellus venenatis ipsum a leo sagittis maximus. Etiam sed ex malesuada, aliquam lacus id, aliquet lectus. Praesent scelerisque congue velit, a auctor massa fringilla sollicitudin. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi orci justo, viverra at felis sit amet, egestas sodales lectus. Duis pulvinar nunc vitae erat facilisis, vitae sollicitudin ex mollis. Morbi volutpat nunc nec velit congue, a pulvinar ante luctus. Aliquam eu eleifend felis, id luctus quam. Nunc pulvinar ex nec interdum euismod. Sed vel elit in tellus finibus auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin ut magna magna. Fusce nec feugiat leo. Donec tincidunt ipsum augue, ullamcorper bibendum mauris vehicula et.
+		</p>
+		
+		
+		<div id="css-table">
+			<div class="table-title">Post 1 Table</div>
+			<div class="column blue">
+				<div class="theader row">Column 1</div>
+				<div class="row">Row 1 value</div>
+				<div class="row">Row 2 value</div>
+				<div class="row">Row 3 value</div>
+			</div>
+			<div class="column green">
+				<div class="theader row">Column 2</div>
+				<div class="row">Row 1 value</div>
+				<div class="row">Row 2 value</div>
+				<div class="row">Row 3 value</div>
+			</div>
+			<div class="column yellow">
+				<div class="theader row">Column 3</div>
+				<div class="row">Row 1 value</div>
+				<div class="row">Row 2 value</div>
+				<div class="row">Row 3 value</div>
+			</div>
+			<div class="column orange">
+				<div class="theader row">Column 4</div>
+				<div class="row">Row 1 value</div>
+				<div class="row">Row 2 value</div>
+				<div class="row">Row 3 value</div>
+			</div>
+		</div>
+		<figure>
+			<img src="assets/table-ss.JPG">
+			<figcaption>Table before using table html</figcaption>
+		</figure>
+		<div>
+			<h3 class="progress-bar"><strong>Progress Bar</strong></h3>
+			<progress value="0" id="meter">0%</progress>
+		</div>
+	</div>
+	<section>
+		<div>
+			<h3 class="post-title"><a href="page-1.html">Post 2 Title</a></h3>
+			<p>Curabitur feugiat faucibus accumsan. Mauris a lectus diam. Cras ac blandit ante. Cras tortor dui, placerat id nibh sit amet, porttitor luctus metus. Integer et mollis ....</p>
+		</div>
+		<div>
+			<h3 class="post-title"><a href="page-2.html">Post 3 Title</a></h3>
+			<p>Curabitur feugiat faucibus accumsan. Mauris a lectus diam. Cras ac blandit ante. Cras tortor dui, placerat id nibh sit amet, porttitor luctus metus. Integer et mollis ....</p>
+		</div>
+	</section>
+	<div class="Contact" id="Contact">
+		<h3><strong>Contact:</strong></h3>
+		<form id="contact-form" onsubmit="formFunction()" action="process_this.php" method="get">
+			<div>
+				Name: <input type="text" id="name-input" placeholder="Enter your name here" required><br/>
+				E-mail: <input type="email" id="e-mail" placeholder="Enter your E-mail here" required>
+				<textarea rows="5" cols="35" id="msg" placeholder="Enter your message here.." required> </textarea><br/>
+				<input type="submit" value="Send" id="Submit">
+			</div>
+		</form>
+	</div>
+	
+</div>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

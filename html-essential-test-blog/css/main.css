@@ -1,0 +1,220 @@
+body{
+	background-color: #9ce8ba;
+	color: white;
+}
+
+nav{
+
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover{
+	color: black;
+}
+/* Using data-attribute
+
+				<li data-custom="1">1</li>
+				<li data-custom="2">2</li>
+				<li data-custom="3">3</li>
+*/
+li[data-custom="1"]{
+	color: red;
+}
+li[data-custom="2"]{
+	color: blue;
+}
+li[data-custom="3"]{
+	color: yellow;
+}
+
+ul{
+	overflow: hidden;
+	background-color: #309365;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+li{
+	float: left;
+}
+
+li a {
+	text-align: center;
+	display: block;
+	color: #1d152c;
+	text-decoration: none;
+	padding: 10px 25px;
+}
+
+section{
+	width: 20%;
+	float: right;
+	display: inline;
+}
+#Post{
+	width: 70%;
+	float: left;
+}
+#About{
+	border: 1px black double;
+	margin: 20px;
+	padding: 20px;
+	background-color: rgba(0, 51, 0,0.5);
+}
+.main-container{
+	margin: 50px;
+}
+
+.header-img{
+	display: inline;
+	position: absolute;
+	z-index: -1;
+}
+
+#Post2{
+	width: 60%;
+	float: left;
+}
+
+.post{
+	color: black;
+}
+
+.post3{
+	padding: 10px 50px;
+	margin: 20px;
+}
+
+.post3 p{
+	margin-top: 50px;
+}
+
+.embed-vid{
+	float:left;
+	padding: 10px;
+	margin: 5px;
+}
+
+.post-frame{
+	float: left;
+	margin: 20px;
+	height: 500px;
+}
+
+#contact-form{
+	clear: both;
+	width: inherit;
+}
+
+.Contact{
+	margin: auto 30%;
+	display: inline-block;
+	background-color: black;
+	width: 400px;
+	border: 2px white double;
+	padding: 15px;
+}
+
+.post-title{
+	color: #5de66d;
+}
+
+.Contact input{
+	margin: 10px;
+}
+
+.progress-bar{
+	background-color: rgba(0,51,0,0.5);
+	padding: 5px;
+	border: 1px black solid;
+	color: #ceff00;
+}
+
+/* change color of the link on hover*/
+li a:hover {
+    background-color: #03ef5d;
+}
+
+
+/*
+
+
+CSS for Table
+
+
+*/
+
+.table-title{
+	text-align: center;
+	font-size: 1.3em;
+}
+
+#css-table{
+	padding-left: 15px;
+	position: relative;
+	height: 400px;
+	width: 600px;
+/*	background: rgba(10, 10, 70, 0.65);*/
+}
+
+.theader{
+	font-weight: bolder;
+	font-size: 1.5em;
+}
+
+.column{
+	box-sizing: border-box;
+	height: 90%;
+	width: 24%;
+	margin: 15px auto 15px;
+	position: relative;
+	border: 1px black solid;
+	float: left;
+}
+
+.row{
+	padding: 10px;
+	text-align: center;
+	box-sizing: border-box;
+	height: 25%;
+	border: 1px white solid;
+}
+
+.blue{
+	background: #5d5dfa;
+}
+
+.green{
+	background: #448344;
+}
+
+.yellow{
+	background: #a7a742;
+}
+
+.orange{
+	background: #774f4f;
+}
+
+figcaption{
+	color: #262222;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
