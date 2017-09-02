@@ -1,0 +1,74 @@
+/*facebook, twiiter google plus , pinterest*/
+article{
+	width: 60%;
+	position: relative;
+}
+
+article img{
+	box-sizing: border-box;
+	padding: 2px;
+	height: 100%;
+	width: 100%;
+}
+
+article .post-details i{
+	color: red;
+}
+
+article hr{
+	width: 70%;
+	opacity: 0.3;
+}
+
+article h2{
+	color: black;
+}
+
+article .share-social i{
+	padding: 10px;
+	border: 1px rgba(0, 0, 0, 0.14) solid;
+}
+
+article button{
+	padding: 12px;
+	background-color: black;
+	color: white;
+	font-size: .9em;
+	letter-spacing: 1px;
+	font-family: monospace;
+	float: right;
+}
+
+.post-details span{
+	margin: 10px;
+}
+
+.share-social hr{
+	width: 80%;
+	position: absolute;
+	z-index: -1;
+	margin-top: 16px;
+}
+
+.share-social i{
+	background: white;
+}
+
+.post-content,.post-details{
+	text-align: center;
+	color: #726b6b;
+}
+
+.post-content{
+	text-align: justify;
+	padding: 0px 30px 20px;
+	margin: 0px 30px 25px;
+}
+
+.post-details{
+	font-size: .9em;
+}
+
+.share-social{
+	margin: 0 10% 25px;
+}

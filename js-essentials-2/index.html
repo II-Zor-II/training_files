@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JS ESSENTIALS</title>	
+	<link rel="stylesheet" href="css/normalize.css" media="all">
+	<link rel="stylesheet" href="css/main.css" media="screen">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="authoer" content="Zor">
+	<meta name="description" content="Js essential sample site"
+</head>
+<body>
+<div>
+	<button id="dbEmp">Generate Employee Table</button>
+	<div class="table-wrapper">
+		<h3>Persons Table</h3>
+		<input type="search" id="SearchInput" placeholder="search here">
+		<table id="DataTable">
+		<tr>
+			<th>id</th>
+			<th>first name</th>
+			<th>last name</th>
+			<th>email</th>
+			<th>gender</th>
+			<th></th>
+		</tr>
+		</table>	
+	</div>
+	<div class="table-emp-wrapper">
+		<h3>Employee Table</h3>
+		<table id="EmployeeDataTable">
+		<tr>
+			<th>id</th>
+			<th>first name</th>
+			<th>last name</th>
+			<th>email</th>
+			<th>gender</th>
+			<th>Employee</th>
+			<th>Hr. rate</th>
+			<th>OJT hrs</th>
+			<th>Days-Worked</th>
+			<th></th>
+		</tr>
+		</table>	
+	</div>	
+	<div>
+		<form class="emp-form" data-emp-id=''>
+			<div class="partTime-form" >
+			<input type="text" placeholder="hourly rate" name="pt-hr" autocomplete="off">
+			<input type="text" placeholder="Number of hours worked" name="pt-nh" autocomplete="off">			
+			<input type="submit" value="Submit" autocomplete="off">
+			</div>
+			<div  class="fullTime-form">
+			<input type="text" placeholder="Number of days worked" name="ft-ndw" autocomplete="off">
+			<input type="submit" value="Submit" autocomplete="off">
+			</div>
+			<div class="trainee-form">
+			<input type="text" placeholder="hourly rate" name="t-hr" autocomplete="off">
+			<input type="text" placeholder="Number of hours worked" name="t-nh" autocomplete="off">
+			<input type="text" placeholder="total OJT hours to finish" name="t-tOjt-hrs" autocomplete="off">
+			<input type="submit" value="Submit">
+			</div>
+		</form>
+	</div>	
+</div>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
